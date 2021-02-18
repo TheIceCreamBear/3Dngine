@@ -7,8 +7,18 @@ plugins {
     id 'application'
 }
 
+// use this so it only has to be edited once
+project.ext.mainClass = 'com.joseph.engine.Main'
+
 application {
-    mainClass = 'com.joseph.engine.Main' 
+    mainClass = "${mainClass}"
+}
+
+// setup the jar task so it makes it runnable
+jar {
+    manifest {
+        attributes 'Main-Class': "${mainClass}"
+    }
 }
 
 java {
