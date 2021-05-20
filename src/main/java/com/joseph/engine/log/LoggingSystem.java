@@ -13,7 +13,7 @@ import org.apache.logging.log4j.Logger;
  * @author Joseph
  *
  */
-public class LoggingSystem {
+public final class LoggingSystem {
 	private static Logger systemLogger;
 	private static boolean init = false;
 	private static Map<String, SimplifiedLogger> loggerCache;

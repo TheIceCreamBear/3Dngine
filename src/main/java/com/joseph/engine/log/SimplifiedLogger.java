@@ -16,6 +16,14 @@ public class SimplifiedLogger {
 		this.log = log;
 	}
 	
+	public void trace(Object o) {
+		log.trace(o);
+	}
+	
+	public void trace(String s) {
+		log.trace(s);
+	}
+	
 	public Logger getLogger() {
 		return log;
 	}
