@@ -2,6 +2,13 @@ package com.joseph.engine.log;
 
 import org.apache.logging.log4j.Logger;
 
+/**
+ * A class to simplify log4j logging. It contains a log4j {@link Logger}, and provides simple methods for logging
+ * Strings and Objects at all default log levels. If direct access to the log4j {@link Logger} is needed, 
+ * {@link SimplifiedLogger#getLogger()} is available.
+ * @author Joseph
+ *
+ */
 public class SimplifiedLogger {
 	private final Logger log;
 	
